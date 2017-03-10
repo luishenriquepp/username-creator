@@ -1,4 +1,4 @@
 public interface IFormatRule
 {
-    string Test(string fullName);
+    string Test(string[] fullName);
 }

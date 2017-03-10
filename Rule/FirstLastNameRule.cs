@@ -1,9 +1,7 @@
 public class FirstLastNameRule : IFormatRule
 {
-    public string Test(string fullName)
+    public string Test(string[] fullName)
     {
-        string[] spliced = fullName.Split(' ');
-        string username = spliced[spliced.Length - spliced.Length] + spliced[spliced.Length-1];
-        return username;
+        return fullName[fullName.Length - fullName.Length] + fullName[fullName.Length-1];
     }
 }

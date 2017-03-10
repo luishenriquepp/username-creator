@@ -14,7 +14,7 @@ namespace ConsoleApplication
                 "LPaim"
             };
 
-            UsernameFactory fac = new UsernameFactory("Luis Henrique Pacheco Paim",
+            UsernameFactory fac = new UsernameFactory("Luis",
             new List<IFormatRule> { new FirstLastNameRule(), new FirstTwoLetterLastNameRule() } ,
             new List<IValidation> { new UsernameLengthValidation(), new UsernameExistsValidation(usernames) });
             

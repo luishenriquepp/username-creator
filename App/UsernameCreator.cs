@@ -18,7 +18,7 @@ public class UsernameFactory
     {
         foreach(var rule in Rules)
         {            
-            string userName = rule.Test(this.FullName);
+            string userName = rule.Test(SplitFullname.Get(this.FullName));
             bool isApropriated = true;
             foreach(var val in Validations)
             {
